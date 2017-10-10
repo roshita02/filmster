@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Filmster</title>
+   <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav>
+ <div class="row">
+    <div class = "col-lg-6 col-lg-offset-1">
+      <div class="row">
+        <div class="nav_wrapper">
+          <div class="col-xs-6">
+            <span class="pull-left brand">
+              <%= link_to 'Filmster', root_path %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</nav>  
 
 <%= yield %>
 
